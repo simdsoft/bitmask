@@ -98,7 +98,7 @@ Copyright (c) 2020 Simdsoft Limited.
 
 namespace bitmask
 {
-inline bool ispot(int v) { return (v > 0 && v <= 0xff) && ((v & (v - 1)) != 0); }
+inline bool ispot(int v) { return (v > 0) && ((v & (v - 1)) == 0); }
 } // namespace bitmask
 
 #endif
